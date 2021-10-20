@@ -10,6 +10,8 @@
 # 下载
 ```
 git clone https://github.com/mathcoder23/docker-oss-sync.git
+# 加速
+git clone https://github.com.cnpmjs.org/mathcoder23/docker-oss-sync.git
 ```
 
 # 编译
@@ -23,7 +25,7 @@ chmod +x build.sh
 ```
 # 运行模板
 ```shell script
-docker run -e TASK_CRON=2 \
+docker run -e TASK_CRON="0 2 * * *" \
 -e OSS_ENDPOINT=oss-cn-beijing.aliyuncs.com \
 -e OSS_KEY_ID=xxx \
 -e OSS_KEY_SECRET=xxx \

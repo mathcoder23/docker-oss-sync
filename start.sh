@@ -1,4 +1,4 @@
-docker run -e TASK_CRON=2 \
+docker run -e TASK_CRON="0 2 * * *" \
 -e OSS_ENDPOINT=oss-cn-beijing.aliyuncs.com \
 -e OSS_KEY_ID=xxx \
 -e OSS_KEY_SECRET=xxx \
