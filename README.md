@@ -7,6 +7,11 @@
 - 挂载要同步的目录到容器内/sync
 - 自定义cron任务时间
 
+# 下载
+```
+git clone https://github.com/mathcoder23/docker-oss-sync.git
+```
+
 # 编译
 ```shell script
 docker built -t docker-oss-sync:1.0 .
