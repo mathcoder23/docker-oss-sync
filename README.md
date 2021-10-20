@@ -11,6 +11,11 @@
 ```shell script
 docker built -t docker-oss-sync:1.0 .
 ```
+```shell script
+cd go 
+chmod +x build.sh 
+./build.sh
+```
 # 运行模板
 ```shell script
 docker run -e TASK_CRON=2 \
@@ -30,6 +35,12 @@ docker-oss-sync:1.0
 - `0 * * * *` 一小时一次
 - `0 2 * * *` 每天两点
 
+# 脚本运行
+- 修改脚本内的环境变量
+```shell script
+chmod +x start.sh
+./start.sh
+```
 
 # 时间调度配置参考
 ## TASK_CRON
