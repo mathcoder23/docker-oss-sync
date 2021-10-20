@@ -1,1 +1,1 @@
-docker build -t docker-oss-sync:1.0 .
+docker build -t docker-oss-sync:1.0 .

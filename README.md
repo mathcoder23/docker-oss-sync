@@ -11,7 +11,7 @@
 ```
 git clone https://github.com/mathcoder23/docker-oss-sync.git
 # 加速
-git clone https://github.com.cnpmjs.org/mathcoder23/docker-oss-sync.git
+git clone https://hub.fastgit.org/mathcoder23/docker-oss-sync.git
 ```
 
 # 编译
