@@ -1,5 +1,11 @@
 FROM golang:alpine
 
+# 中国时区
+RUN apk update \
+    && apk add tzdata \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo "Asia/Shanghai" > /etc/timezone
+
 # 为我们的镜像设置必要的环境变量
 ENV GO111MODULE=on \
     CGO_ENABLED=0 \
